@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+:root{
+    /* ### Theme 1 */
+    
+    /* #### Backgrounds */
+    
+    --Very-dark-desaturated-blue-main-background: hsl(222, 26%, 31%);
+    --Very-dark-desaturated-blue-toggle-background-keypad-background: hsl(223, 31%, 20%);
+    --Very-dark-desaturated-blue-screen-background: hsl(224, 36%, 15%);
+    
+    /* #### Keys */
+    
+    --Desaturated-dark-blue-key-background: hsl(225, 21%, 49%);
+    --Desaturated-dark-blue-key-shadow: hsl(224, 28%, 35%);
+    
+    --Red-key-background-toggle: hsl(6, 63%, 50%);
+    --Dark-red-key-shadow: hsl(6, 70%, 34%);
+    
+    --Light-grayish-orange-key-background: hsl(30, 25%, 89%);
+    --Grayish-orange-key-shadow: hsl(28, 16%, 65%);
+    
+    /* #### Text */
+    
+    --Very-dark-grayish-blue: hsl(221, 14%, 31%);
+    --White: hsl(0, 0%, 100%);
+
+    /* ### Theme 2 */
+
+    /* #### Backgrounds */
+
+    --Light-gray-main-background: hsl(0, 0%, 90%);
+    --Grayish-red-toggle-background-keypad-background: hsl(0, 5%, 81%);
+    --Very-light-gray-screen-background: hsl(0, 0%, 93%);
+
+    /* #### Keys */
+
+    --Dark-moderate-cyan-key-background: hsl(185, 42%, 37%);
+    --Very-dark-cyan-key-shadow: hsl(185, 58%, 25%);
+
+    --Orange-key-background-toggle: hsl(25, 98%, 40%);
+    --Dark-orange-key-shadow: hsl(25, 99%, 27%);
+
+    --Light-grayish-yellow-key-background: hsl(45, 7%, 89%);
+    --Dark-grayish-orange-key-shadow: hsl(35, 11%, 61%);
+
+    /* #### Text */
+
+    --Very-dark-grayish-yellow: hsl(60, 10%, 19%);
+    --White-text: hsl(0, 0%, 100%);
+
+    /* ### Theme 3 */
+
+    /* #### Backgrounds */
+
+    --Very-dark-violet-main-background: hsl(268, 75%, 9%);
+    --Very-dark-violet-toggle-background-keypad-background-screen-background: hsl(268, 71%, 12%);
+
+    /* #### Keys */
+
+    --Dark-violet-key-background: hsl(281, 89%, 26%);
+    --Vivid-magenta-key-shadow: hsl(285, 91%, 52%);
+
+    --Pure-cyan-key-background-toggle: hsl(176, 100%, 44%);
+    --Soft-cyan-key-shadow: hsl(177, 92%, 70%);
+
+    --Very-dark-violet-key-background: hsl(268, 47%, 21%);
+    --Dark-magenta-key-shadow: hsl(290, 70%, 36%);
+
+    /* #### Text */
+
+    --Light-yellow: hsl(52, 100%, 62%);
+    --Very-dark-blue: hsl(198, 20%, 13%);
+    --White-text: hsl(0, 0%, 100%);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+    user-select: none;
+}
+
+.theme3{
+    background-color: var(--Very-dark-violet-main-background);
+}
+.theme3 .input:checked + .label::after{
+    background-color: var(--Pure-cyan-key-background-toggle);
+}
+.theme3 .themeOpt{
+    background-color: var(--Very-dark-violet-toggle-background-keypad-background-screen-background);
+}
+.theme3 header{
+    color: var(--Light-yellow);
+}
+.theme3 input[type="text"]{
+    background-color: var(--Very-dark-violet-toggle-background-keypad-background-screen-background);
+    color: var(--Light-yellow);
+    border: 1px solid var(--Very-dark-violet-toggle-background-keypad-background-screen-background);
+}
+.theme3 main{
+    background-color: var(--Very-dark-violet-toggle-background-keypad-background-screen-background);
+}
+.theme3 main button{
+    color: var(--Light-yellow);
+    background-color: var(--Very-dark-violet-key-background);
+    box-shadow: 0 4px 2px var(--Dark-magenta-key-shadow);
+}
+.theme3 #reset,.theme3 #del{
+    color: var(--White-text);
+    background-color: var(--Dark-violet-key-background);
+    box-shadow: 0 4px 2px var(--Vivid-magenta-key-shadow);
+}
+.theme3 #equalTo{
+    color: var(--White-text);
+    background-color: var(--Pure-cyan-key-background-toggle);
+    box-shadow: 0 4px 2px var(--Soft-cyan-key-shadow);
+}
+
+
+.theme2{
+    background-color: var(--Light-gray-main-background);
+}
+.theme2 .input:checked + .label::after{
+    background-color: var(--Orange-key-background-toggle);
+}
+.theme2 .themeOpt{
+    background-color: var(--Grayish-red-toggle-background-keypad-background);
+}
+.theme2 header{
+    color: var(--Very-dark-grayish-yellow);
+}
+.theme2 input[type="text"]{
+    background-color: var(--Very-light-gray-screen-background);
+    color: var(--Very-dark-grayish-yellow);
+    border: 1px solid var(--Grayish-red-toggle-background-keypad-background);
+}
+.theme2 main{
+    background-color: var(--Grayish-red-toggle-background-keypad-background);
+}
+.theme2 main button{
+    color: var(--Very-dark-grayish-yellow);
+    background-color: var(--Light-grayish-yellow-key-background);
+    box-shadow: 0 4px 2px var(--Dark-grayish-orange-key-shadow);
+}
+.theme2 #reset,.theme2 #del{
+    color: var(--White-text);
+    background-color: var(--Dark-moderate-cyan-key-background);
+    box-shadow: 0 4px 2px var(--Very-dark-cyan-key-shadow);
+}
+.theme2 #equalTo{
+    color: var(--White-text);
+    background-color: var(--Dark-orange-key-shadow);
+    box-shadow: 0 4px 2px var(--Dark-orange-key-shadow);
+}
+
+
+.theme1{
+    background-color: var(--Very-dark-desaturated-blue-main-background);
+}
+.theme1 .themeOpt{
+    background-color: var(--Very-dark-desaturated-blue-toggle-background-keypad-background);
+}
+.theme1 .input:checked + .label::after{
+    background-color: var(--Red-key-background-toggle);
+}
+.theme1 header{
+    color: var(--White-text);
+
+}
+.theme1 input[type="text"]{
+    background-color: var(--Very-dark-desaturated-blue-screen-background);
+    border: 1px solid var(--Very-dark-desaturated-blue-toggle-background-keypad-background);
+    color: var(--White);
+}
+.theme1 main{
+    background-color: var(--Very-dark-desaturated-blue-toggle-background-keypad-background);
+}
+.theme1 main button{
+    color: var(--Very-dark-grayish-blue);
+    background-color: var(--Light-grayish-orange-key-background);
+}
+.theme1 main button{
+    box-shadow: 0 4px 2px var(--Grayish-orange-key-shadow);
+}
+.theme1 #reset,.theme1 #del{
+    color: var(--White-text);
+    background-color: var(--Desaturated-dark-blue-key-background);
+    box-shadow: 0 4px 2px var(--Desaturated-dark-blue-key-shadow);
+}
+.theme1 #equalTo{
+    color: var(--White-text);
+    background-color: var(--Red-key-background-toggle);
+    box-shadow: 0 4px 2px var(--Dark-red-key-shadow);
+}
+
+
+
+body{
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 10px;
+}
+.themeOpt{
+    font-size: 20px;
+    height: 30px;
+    border-radius: 200px;
+    position: relative;
+    text-align: center;
+    padding: 0 5px;
+}
+.container{
+    width: 400px;
+}
+header{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+}
+header h2{
+    margin-right: auto;
+}
+header p{
+    font-size: 16px;
+}
+input[type="text"]{
+    border: none;
+    font-size: 36px;
+    padding: 25px 20px;
+    width: 100%;
+    border-radius: 10px;
+    text-align: end;
+    margin-bottom: 20px;
+}
+main{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+main button{
+    height: 50px;
+    border-radius: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    border: none;
+    user-select: none;
+    font-weight: bolder;
+}
+main button:active{
+    transform: scale(0.95,0.95);
+}
+#reset, #equalTo{
+    grid-column: span 2;
+}
+
+.input{
+    display: none;
+}
+.label{
+    position: relative;
+    top: -25px;
+    margin: 5px;
+    cursor: pointer;
+}
+.input:checked + .label::after{
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50px;
+    top: 27px;
+    left: -50%;
+}

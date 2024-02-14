@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(0, 0%, 100%); }
+  </style>
+</head>
+<body id="body">
+  <div class="container">
+    <header>
+      <h2>calc</h2>
+      <p>THEME</p>
+      <div class="themeOpt">
+        <input class="input" type="radio" name="theme" id="theme1" value="theme1">
+        <label class="label" for="theme1">1</label>
+        <input class="input" type="radio" name="theme" id="theme2" value="theme2">
+        <label class="label" for="theme2">2</label>
+        <input class="input" type="radio" name="theme" id="theme3" value="theme3">
+        <label class="label" for="theme3">3</label>
+      </div>
+    </header>
+    <input type="text" id="screen">
+    <main>
+      <button onclick="insert(7)">7</button>
+      <button onclick="insert(8)">8</button>
+      <button onclick="insert(9)">9</button>
+      <button onclick="del()" id="del">DEl</button>
+      <button onclick="insert(4)">4</button>
+      <button onclick="insert(5)">5</button>
+      <button onclick="insert(6)">6</button>
+      <button onclick="insert('+')">+</button>
+      <button onclick="insert(1)">1</button>
+      <button onclick="insert(2)">2</button>
+      <button onclick="insert(3)">3</button>
+      <button onclick="insert('-')">-</button>
+      <button onclick="insert('.')">.</button>
+      <button onclick="insert(0)">0</button>
+      <button onclick="insert('/')">/</button>
+      <button onclick="insert('*')">*</button>
+      <button onclick="reset()" id="reset">RESET</button>
+      <button onclick="equalTo()" id="equalTo">=</button>
+    </main>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Lokesh I</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
